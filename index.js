@@ -17,7 +17,7 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 app.use("/user", userRouter);
-app.get("/",(re,res)=>{
+app.get("/",(req,res)=>{
   res.send("hello from backend")
 })
 const CONNECTION_URL = 'mongodb+srv://jaiswalpawan1710:1@cluster0.t7l661n.mongodb.net/';
